@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/register.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+              integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+              crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" type="image/png" href="./images/favicon.ico">
+        <title>Pick-a-Book | Register with Us</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo.png" alt=""></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="explore.jsp">Explore</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="login.html">Account</a></li>
+                        <li><a href="#" onclick="logout()">Log out</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.jsp"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+        <!-- the register section -->
+        <div class="outer-container">
+            <div class="form-container">
+                <form id="form" class="form" >
+                    <h2>Register With Us</h2>
+                    <div class="form-control">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Enter Username">
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter mail">
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter Password">
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" id="password2" placeholder="Enter Password Again">
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="mobileno">Mobile Number</label>
+                        <input type="text" id="mobileno" placeholder="Enter Mobile Number">
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" placeholder="Enter Address">
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="city">City</label>
+                        <input type="text" id="city" placeholder="Enter City">
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="city">State</label>
+                        <input type="text" id="state" placeholder="Enter State">
+                        <small>Error message</small>
+                    </div>
+                    <input id="input" type="button" value="Submit" onclick="addUser()"/>
+                    <!--                    <button type="submit" onclick="addUser()">Submit</button>-->
+                    <a class="login-link" href="login.html">Already have an account?</a>
+                </form>
+            </div>
+        </div>
+        <!--        <script src="account.js"></script>-->
+
+        <!-- footer -->
+        <footer class="footer bg-dark">
+            <div class="f-container grid grid-3">
+                <div>
+                    <h1>Pick-a-Book</h1>
+                    <p>Copyright &copy; 2021</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="explore.jsp">Explore</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="register.html">Account</a></li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- script/s -->
+        <script src="./js/logout.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/register.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
+</html>

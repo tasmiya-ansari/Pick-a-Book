@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/admin.css">
+    <title>Admin | Add User</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="../logo.png" alt=""></a>
+            </div>
+            <nav>
+                <a href="#" class="btn">Logout</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Admin wrapper -->
+    <div class="admin-wrapper">
+        <!-- Left side -->
+        <div class="left-sidebar">
+            <ul>
+                <li><a href="../books/b-index.html">Manage Books</a></li>
+                <li><a href="u-index.html">Manage Users</a></li>
+                <li><a href="../categories/c-index.html">Manage Categories</a></li>
+            </ul>
+        </div>
+        <!-- Admin Content -->
+        <div class="admin-content">
+            <div class="button-group">
+                <a href="u-create.html" class="btn">Add User</a>
+                <a href="u-index.html" class="btn">Manage Users</a>
+            </div>
+
+            <div class="content">
+                <h2 class="section-title">Add User</h2>
+                <form action="u-create.html">
+                    <div>
+                        <label>Username</label>
+                        <input type="text" name="username" class="text-input">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" name="email" class="text-input">
+                    </div>
+                    <div>
+                        <label>Role</label>
+                        <select name="role" class="text-input">
+                            <option value="Admin">Admin</option>
+                            <option value="Author">Author</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-big">Add User</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- footer
+    <footer class="footer bg-dark">
+        <div class="f-container grid grid-3">
+            <div>
+                <h1>Pick-a-Book | Admin Panel</h1>
+            </div>
+        </div>
+    </footer> -->
+
+    <!-- script/s -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/classic/ckeditor.js"></script>
+    <script src="../js/admin-script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/register.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+              integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+              crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" type="image/png" href="./images/favicon.ico">
+        <title>Pick-a-Book | Login</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo.png" alt=""></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="explore.jsp">Explore</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="login.html">Account</a></li>
+                        <li><a href="#" onclick="logout()">Log out</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.jsp"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <!-- the login section -->
+        <div class="outer-container">
+            <div class="form-container">
+                <form id="form" class="form">
+                    <h2>Login</h2>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter Email">
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter Password">
+                        <small>Error message</small>
+                    </div>
+                    <!--                    <a href="#" class="forgot-pw">Forgot Password</a>-->
+                    <input id="input" type="button" value="Submit" onclick="connectUser()"/>
+                    <a class="login-link" href="register.html">Don't have an account?</a>
+                </form>
+            </div>
+        </div>
+        <!--        <script src="account.js"></script>-->
+
+        <!-- footer -->
+        <footer class="footer bg-dark">
+            <div class="f-container grid grid-3">
+                <div>
+                    <h1>Pick-a-Book</h1>
+                    <p>Copyright &copy; 2021</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="explore.jsp">Explore</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="register.html">Account</a></li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- script/s -->
+        <script src="./js/login.js"></script>
+        <script src="./js/logout.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="js/jquery.js" type="text/javascript"></script>
+    </body>
+
+</html>

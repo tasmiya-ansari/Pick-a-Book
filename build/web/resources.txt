@@ -1,0 +1,23 @@
+font used - Roboto, sans-serif
+
+cart icon - <i class="fa fa-shopping-cart"></i>
+
+filled/solid star icon - <i class="fas fa-star"></i>
+
+empty/non-solid star icon - <i class="far fa-star></i>
+
+half filled star icon - <i class="fas fa-star-half-alt"></i> 
+
+ruppe sign - ₹
+
+the css as well as javascript file for login and register page is same : register.css and register.js
+
+\\
+all the css is writtent from scratch no bootstrap is used.
+
+\\
+the icons which are used in the website are from fontawesome.com
+
+\\ favicon : <link rel="shortcut icon" type="image/png" href="./images/favicon.ico">
+
+&#8377;-₹

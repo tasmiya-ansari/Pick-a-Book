@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+              integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+              crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/styles_1.css">
+        <link rel="shortcut icon" type="image/png" href="./images/favicon.ico">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <title>Pick-a-Book | Home</title>
+        <style>      
+            /* Section 2 css */
+            .slider{ max-width:1100px;display: flex;  }
+            .container-sec2 {height: 500px;max-width: 1250px; margin: 0 auto; background-color: #B9D9EB; border: 1px; }
+            .slider .card{ background: #fff;width: 320px;flex:1;margin: 0 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);        }
+            .slider .card .img{ padding: 10px; height: 300px; width: 80%;}
+            .slider .card .img img{ height: 100%; width: 100%;background-attachment: fixed;  background-size: cover;}
+            .slider .card .content{ padding: 10px 20px;}
+            .card .content .title{ font-size: 25px; font-weight: 600;}
+            .card .content .sub-title{ font-size: 20px; font-weight: 600; color: #e74c3c; line-height: 20px;}
+            .card .content p{ text-align: center; margin: 10px 0;}
+            .card .content .btn-2{ display: block; text-align: center; margin: 10px 0;}
+            .card .content .btn-2 button{ background: #e74c3c;color: #fff; border: 2px; outline: none; font-size: 17px; padding : 5px 8px; border-radius: 5px; cursor: pointer; transition: 0.2s;}
+            .card .content .btn-2 button:hover{transform: scale(0.9);}
+
+            /* Section 3 css */
+            .section-title{ text-align: center; margin: 0 auto 50px; position: relative; line-height: 60px;}
+            .section-title::after { content: ''; background: var(--primary-color); width: 80px; height: 5px; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);}
+            .card-sec3 { background: #fff;width:260px ;height: auto;border-top-left-radius: 10px; border-top-right-radius: 10px;overflow: hidden;margin:8px;
+                         transition: all 0.2s ease-in-out;}
+            .card-sec3:hover {box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1), 0px 6px 12px rgba(0, 0, 0, 0.1), 1px 3px 15px rgba(0, 0, 0, 0.1);transform: translateY(5px);}
+            .card .image-box {height:auto; border-radius: inherit; border: none; background: #70bee6;}
+            .card-sec3 .image-box img { width:80%; height:240px;}
+            .card-sec3 .card-content { padding: 1.3rem;}
+            .card-sec3 .card-title {  font-size: 1.1rem;}
+            .card-sec3 .sub-title { color: gray;}
+            .card-sec3 .rating { margin-top: 0.2rem;}
+            .card-sec3 .rating .fas { color: gold;}
+            .card-sec3 .btn-sec3 {margin-top:0.6rem;padding: 0.4rem 1rem; width: 100%;border-radius: 5px;text-transform: capitalize;background: none;border: 2px solid #70bee6;transition: 0.3s ease;}
+            .card-sec3 .btn-sec3:hover {cursor: pointer; background: #70bee6; color: #fff;}
+        </style>
+    </head>   
+    <body>
+        <div class="header">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo.png" alt=""></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="explore.jsp">Explore</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="login.html">Account</a></li>
+                        <li><a href="#" onclick="logout()" id="logout">Log out</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.jsp" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            </div>
+            <div class="container">
+                <section class="section-1">
+                    <div class="row">
+                        <div class="column">
+                            <br><br><h1>Pick-a-Book | Your all in one Bookstore</h1><br><br>
+                            <p>“If you don’t like to read, you haven’t found the right book.” – J.K. Rowling</p>
+                            <br><br><br><br>
+                            <h2 style="margin-left: 100px;">The shelves are all booked up!</h2>
+                            <a href="explore.jsp" class="btn">Explore</a>
+                        </div>
+                        <div class="column">
+                            <img src="./images/book-Store.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <br>
+
+
+        <!-- <hr> -->
+
+        <!-- Section 2 -->
+
+        <h1 class="section-title">Best sellers of 2021</h1>
+    <center>
+        <div class="container-sec2">
+            <br>
+            <div class="slider owl-carousel">
+                <div class="card">
+                    <div class="img">  <img src="images/books/The Push.jpg" alt=""/></div>
+
+                    <div class="content">
+                        <div class="title">The Push</div>
+                        <div class="sub-title">Ashley Audrain</div>
+                        <p>₹ 335/-</p> 
+                        <div class="btn-2">
+                            <button onclick="getDetails('B-130')">View more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"> <img src="images/books/A Crooked Tree.jpg" alt=""/></div>
+
+                    <div class="content">
+                        <div class="title">A Crooked Tree </div>
+                        <div class="sub-title">Una Mannion</div>
+                        <p>₹ 933.2/-</p> 
+                        <div class="btn-2">
+                            <button onclick="getDetails('B-131')">View more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">  <img src="images/books/Girl A.jpg" alt=""/></div>
+
+                    <div class="content">
+                        <div class="title">Girl A</div>
+                        <div class="sub-title">Abigail Dean</div>
+                        <p>₹ 234/-</p> 
+                        <div class="btn-2">
+                            <button onclick="getDetails('B-133')">View more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"> <img src="images/books/This Close to Okay.jpg" alt=""/></div>
+
+                    <div class="content">
+                        <div class="title">This Close to Okay</div>
+                        <div class="sub-title">Leesa Cross-Smith</div>
+                        <p>₹ 609.5/-</p> 
+                        <div class="btn-2">
+                            <button onclick="getDetails('B-134')">View more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"> <img src="images/books/The Wife Upstairs.jpg" alt=""/></div>
+
+                    <div class="content">
+                        <div class="title">The Wife Upstairs</div>
+                        <div class="sub-title">Rachel Hawkins</div>
+                        <p>₹ 312/-</p> 
+                        <div class="btn-2">
+                            <button onclick="getDetails('B-132')">View more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"> <img src="images/books/pet-sematary.jpeg" alt=""/></div>
+                    <div class="content">
+                        <div class="title">Pet Sematary</div>
+                        <div class="sub-title">Stephen King</div>
+                        <p>₹ 399/-</p> 
+                        <div class="btn-2">
+                            <button onclick="getDetails('B-129')">View more</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <!-- <hr style="margin-bottom: 50px;"> -->
+
+    <!-- Section 3: latest collection -->
+    <h1 class="section-title">Latest Collection</h1>
+
+    <div class="container-sec2" style="width: 1250px; padding-top: 40px;">
+        <center>
+            <div class="row">
+
+                <div class="card-sec3 col-md-3 col-sm-6">
+                    <div class="image-box">
+                        <img src="images/books/the-alchemist.jpg" alt=""/>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">The Alchemist</h2>
+                        <span>Paulo Coelho</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="price">₹ 298/-</p>
+                        <button class="btn-sec3" onclick="getDetails('B-102')">View More</button>
+                    </div>
+                </div>
+
+                <div class="card-sec3 col-md-3 col-sm-6">
+                    <div class="image-box">
+                        <img src="images/books/the-dhoni-touch.jpeg" alt=""/>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">The Dhoni Touch</h2>
+                        <span class="card-title">Bharat Sundaresan</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="price">₹ 299/-</p>
+                        <button class="btn-sec3" onclick="getDetails('B-109')">View More</button>
+                    </div>
+                </div>      
+
+                <div class="card-sec3 col-md-3 col-sm-6">
+                    <div class="image-box">
+                        <img src="images/books/the-white-tiger.jpeg" alt=""/>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">The White Tiger</h2>
+                        <span class="card-title">Aravind Adiga</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="price">₹ 135/-</p>
+                        <button class="btn-sec3"onclick="getDetails('B-117')">View More</button>
+                    </div>
+                </div>
+                <div class="card-sec3 col-md-3 col-sm-6">
+                    <div class="image-box">
+                        <img src="images/books/pet-sematary.jpeg" alt=""/>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Pet Sematary</h2>
+                        <span class="card-title">Stephen King</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="price">₹ 399/-</p>
+                        <button class="btn-sec3" onclick="getDetails('B-129')">View More</button>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </div>
+
+    <!-- section : offer -->
+    <div class="offer">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <img src="./images/book-offer-img.png" class="offer-img" alt="">
+                </div>
+                <div class="column">
+                    <p>Exclusively available at Pick-a-Book on heavy discount!!!</p>
+                    <h1>The Hunger Games Triology</h1>
+                    <small>
+                        The thrilling trilogy expertly described by Suzanne Collins. You enter a future world where
+                        every year two tributes from each district are thrown into an arena expected to fight to the
+                        death or get knocked out.
+                    </small>
+                    <a href="#" class="btn" onclick="getDetails('B-135')">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer bg-dark">
+        <div class="f-container grid grid-3">
+            <div>
+                <h1>Pick-a-Book</h1>
+                <p>Copyright &copy; 2021</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="explore.jsp">Explore</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script/s -->
+    <script src="js/index.js"></script>
+    <script src="js/logout.js"></script>
+    <script>
+        
+        $(".slider").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverpause: true,
+            responsive: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1023: {
+                    items: 3
+                },
+            }
+        });
+    </script>
+
+</body>
+
+</html>
